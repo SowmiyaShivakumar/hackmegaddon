@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.landing_page{
+    background-image: linear-gradient(rgba(91, 235, 18, 0.4),rgba(210, 150, 98, 0.4)),url('../assets/bg_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.title_slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-weight: bolder;
+    font-style: normal;
+    margin-top: 10vh;
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 5vh;
+    font-size: 4vw;
+    color: rgba(14, 84, 246, 0.765);
+}
+
+button {
+    background-color: rgba(42, 173, 42, 0.705);
+    border-radius: 5px;
+    font-size: 4vw;
+    padding: 1vw;
+    color: white;
+    border: none;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: rgb(102, 165, 181);
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2vw;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 2.6vw;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.grid{ 
+    width: 95%;
+    height: 100%;
+    margin:20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    padding: 8px 12px;
+}
+.grid-item{
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    justify-items: center;
+    height: 470px;
+}
+.grid-item2{
+    background-color: gainsboro;
+    display: grid;
+    justify-items: center;
+}
+
+img{
+    max-width: 100%;
+}
+p{
+    background-color: gainsboro;
+    font-size: 35px;
+    margin: 5px;
+    padding:8px;
+    text-align: center;
+}
+p strong{
+    font-size: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+    h1 {
+      font-size: 40px;
+      margin-top: 80px;
+      margin-left: 20px;
+    }
+    
+    h2 {
+      font-size: 30px;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    
+    p {
+      font-size: 25px;
+      padding: 5px;
+    }
+    
+    p strong {
+      font-size: 35px;
+    }
+    
+    button {
+      font-size: 25px;
+      padding: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .title_slogan {
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .grid-item {
+      min-height: 350px;
+    }
+    
+    .grid-item2 {
+      height: 200px;
+    }
+  }
