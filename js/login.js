@@ -27,7 +27,7 @@ loginButton.addEventListener('click', (event) => {
   }
   else {
       alert('Logged in successfully');
-      window.location.href = "index.html";
+      window.location.href = "welcome.html";
   }
 });
 
